@@ -1,0 +1,148 @@
+
+
+.text-white{
+    color: #ffffff;
+}
+
+
+/*call */
+.fa.fa-phone.phone-stl {
+    padding: 16px;
+    color: #ffffff;
+}
+.pinkBg {
+    background-color: #146aa6!important;
+    background-image: linear-gradient(90deg, #57bfe1, #00aeef);
+}
+.intro-banner-vdo-play-btn{
+    height:60px;
+    width:60px;
+    position: fixed;
+    top: 87%;
+    left: 2.8%;
+    text-align:center;
+    margin:-30px 0 0 -30px;
+    border-radius:100px;
+    z-index:1
+}
+.intro-banner-vdo-play-btn i{
+    line-height:56px;
+    font-size:30px
+}
+.intro-banner-vdo-play-btn .ripple{
+    position:absolute;
+    width:160px;
+    height:160px;
+    z-index:-1;
+    left:50%;
+    top:50%;
+    opacity:0;
+    margin:-80px 0 0 -80px;
+    border-radius:100px;
+    -webkit-animation:ripple 1.8s infinite;
+    animation:ripple 1.8s infinite
+}
+
+@-webkit-keyframes ripple{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+@keyframes ripple{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+.intro-banner-vdo-play-btn .ripple:nth-child(2){
+    animation-delay:.3s;
+    -webkit-animation-delay:.3s
+}
+.intro-banner-vdo-play-btn .ripple:nth-child(3){
+    animation-delay:.6s;
+    -webkit-animation-delay:.6s
+}
+
+/*this style for phone*/
+.hotline-phone-ring-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+}
+.hotline-phone-ring {
+    position: relative;
+    visibility: visible;
+    background-color: transparent;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    z-index: 11;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transition: visibility .5s;
+    left: 0;
+    bottom: 0;
+    display: block;
+}
+.hotline-phone-ring-circle {
+    border-color: #0066bf;
+}
+.hotline-phone-ring-circle-fill, .hotline-phone-ring-img-circle, .hotline-bar {
+    background-color: #0066bf;
+}
+.hotline-phone-ring-img-circle {
+    background-color: #e60808;
+    width: 33px;
+    height: 33px;
+    top: 37px;
+    left: 37px;
+    position: absolute;
+    background-size: 20px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hotline-phone-ring-img-circle .pps-btn-img {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+@media (max-width:479px){
+    .intro-banner-vdo-play-btn {
+        height: 60px;
+        width: 60px;
+        position: fixed;
+        top: 87%;
+        left: 8.8%;
+        text-align: center;
+        margin: -30px 0 0 -30px;
+        border-radius: 100px;
+        z-index: 1;
+    }
+}
+
